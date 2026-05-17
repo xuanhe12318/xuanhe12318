@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>心理与生理状态评估</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="container" id="survey">
+  <h1 id="title">心理与生理状态评估</h1>
+  <p id="progress">第 <span id="current">1</span> 题 / 共 45 题</p >
+
+  <p id="question"></p >
+
+  <div id="options"></div>
+</div>
+
+<!-- 留言 -->
+<div id="letter" class="hidden">
+  <h2>检测到一封未读留言</h2>
+  <p>是否查看？</p >
+  <button onclick="rejectLetter()">不是</button>
+  <button onclick="acceptLetter()">是</button>
+</div>
+
+<!-- 日记 -->
+<div id="diary" class="hidden">
+  <div id="pages"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
